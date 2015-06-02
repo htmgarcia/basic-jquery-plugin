@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Custom jQuery plugin example</title>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css"/>
+    <style>
+	body{ 
+		font-family:'Open Sans', sans-serif; 
+	}
+	</style>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="jquery-hello.js"></script>
+	<script>
+	$( document ).ready(function() {
+		$( '#here' ).hello({
+			name: 'Valentin Garcia',
+			color: 'green'
+		});
+	});
+	</script>
+</head>
+<body>
+	
+	<div id="here"></div>
+
+</body>
+</html>
